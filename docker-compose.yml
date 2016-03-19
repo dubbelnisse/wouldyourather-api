@@ -1,0 +1,16 @@
+api:
+  build: .
+  environment:
+    - 'PORT=3000'
+    - 'RETHINKDB_HOST=rethinkdb'
+    - 'RETHINKDB_PORT=28015'
+    - 'RETHINKDB_DB=api'
+  ports:
+    - "3000:3000"
+  links:
+    - rethinkdb
+rethinkdb:
+  image: rethinkdb
+  ports:
+    - "8080:8080"
+    - "28015:28015"
