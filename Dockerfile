@@ -1,4 +1,6 @@
-FROM node:4
+FROM node:4.2
+
+RUN npm install -g rethink-migrate
 
 ADD package.json /app/
 
