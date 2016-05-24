@@ -1,4 +1,4 @@
-api:
+api-hej:
   build: .
   environment:
     - 'PORT=3000'

@@ -1,0 +1,6 @@
+{
+  "host": "rethinkdb",
+  "port": 28015,
+  "db": "api",
+  "logLevel": "info"
+}
